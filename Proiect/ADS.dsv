@@ -1,0 +1,186 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6e64036f-0d7e-443a-acb3-34b0e00beca6" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>ADS</ID>
+  <Name>ADS</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>ADS</DataSourceID>
+  <Schema>
+    <xs:schema id="ADS" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="ADS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="c2824cc8-c98c-4281-b159-15862f0bc9e2">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Categorii" msprop:DbTableName="Categorii" msprop:FriendlyName="Categorii" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="9b0dbdca-b6f3-4d18-9484-46555d7f59e9">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="CategorieID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="CategorieID" msprop:DbColumnName="CategorieID" msprop:design-time-name="c7b5d318-122a-4ceb-867a-6d384118283e" type="xs:int" />
+                  <xs:element name="Nume" msprop:FriendlyName="Nume" msprop:DbColumnName="Nume" msprop:design-time-name="4ed7d8e9-137f-4dcc-be52-a3ba0fb6488b">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Comentarii" msprop:DbTableName="Comentarii" msprop:FriendlyName="Comentarii" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="d1f660d6-d7ba-4614-a040-5be349dec67c">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ComentariuID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ComentariuID" msprop:DbColumnName="ComentariuID" msprop:design-time-name="9a87cee1-86b7-49f1-9ba1-676166301e37" type="xs:int" />
+                  <xs:element name="PostareID" msprop:FriendlyName="PostareID" msprop:DbColumnName="PostareID" msprop:design-time-name="78c7bb20-8f29-440c-af48-1ed987ac0311" type="xs:int" />
+                  <xs:element name="UtilizatorID" msprop:FriendlyName="UtilizatorID" msprop:DbColumnName="UtilizatorID" msprop:design-time-name="3e0543ac-c179-43e8-a6f2-41595ab1f724" type="xs:int" />
+                  <xs:element name="Continut" msprop:FriendlyName="Continut" msprop:DbColumnName="Continut" msprop:design-time-name="8d366bd0-688c-406d-94d2-920131667de8">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="2147483647" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DataCrearii" msprop:FriendlyName="DataCrearii" msprop:DbColumnName="DataCrearii" msprop:design-time-name="aa78b13b-e3e1-4f20-9733-ccc45626d37a" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Postari" msprop:DbTableName="Postari" msprop:FriendlyName="Postari" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="745156ce-910e-4a1f-bbfe-994109447b97">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="PostareID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="PostareID" msprop:DbColumnName="PostareID" msprop:design-time-name="c48ac564-be1b-44c0-adf9-209294879fd6" type="xs:int" />
+                  <xs:element name="UtilizatorID" msprop:FriendlyName="UtilizatorID" msprop:DbColumnName="UtilizatorID" msprop:design-time-name="17f24aac-60b5-4ed3-8204-e8df6d3f018c" type="xs:int" />
+                  <xs:element name="Titlu" msprop:FriendlyName="Titlu" msprop:DbColumnName="Titlu" msprop:design-time-name="3a9166fd-bb27-4ba1-a8bd-08acbd34d3ad">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Continut" msprop:FriendlyName="Continut" msprop:DbColumnName="Continut" msprop:design-time-name="7aa66092-3297-4fc0-b7c3-5a807c4de386">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="2147483647" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DataCrearii" msprop:FriendlyName="DataCrearii" msprop:DbColumnName="DataCrearii" msprop:design-time-name="c21b0846-79de-4d60-afae-99c431b22c50" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_PostCategorie" msprop:DbTableName="PostCategorie" msprop:FriendlyName="PostCategorie" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="5a2ca2dc-3c2d-46a1-85f8-ec55fcee81de">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="PostareID" msprop:FriendlyName="PostareID" msprop:DbColumnName="PostareID" msprop:design-time-name="39d7ce0f-2480-4d84-b896-9a9f3ab34327" type="xs:int" />
+                  <xs:element name="CategorieID" msprop:FriendlyName="CategorieID" msprop:DbColumnName="CategorieID" msprop:design-time-name="13536468-b53d-4050-a2c1-1a44344b4d50" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Utilizatori" msprop:DbTableName="Utilizatori" msprop:FriendlyName="Utilizatori" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="30d88745-cef4-4981-ab7f-4a2c3419a1b9">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="UtilizatorID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="UtilizatorID" msprop:DbColumnName="UtilizatorID" msprop:design-time-name="2e88218f-8f80-4ff0-901a-6d9994097154" type="xs:int" />
+                  <xs:element name="NumeUtilizator" msprop:FriendlyName="NumeUtilizator" msprop:DbColumnName="NumeUtilizator" msprop:design-time-name="17a62d2f-96d4-484f-8b00-371e93533cef">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Email" msprop:FriendlyName="Email" msprop:DbColumnName="Email" msprop:design-time-name="c6f3fedd-289f-48ae-bd94-238b19e4db9a">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ParolaHash" msprop:FriendlyName="ParolaHash" msprop:DbColumnName="ParolaHash" msprop:design-time-name="3ff984fc-c2f5-42ba-98eb-d6af04e53c45">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DataCrearii" msprop:FriendlyName="DataCrearii" msprop:DbColumnName="DataCrearii" msprop:design-time-name="9b638ab1-d1de-41c9-b20e-a11e55518348" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Categorii" />
+          <xs:field xpath="CategorieID" />
+        </xs:unique>
+        <xs:unique name="dbo_Comentarii_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Comentarii" />
+          <xs:field xpath="ComentariuID" />
+        </xs:unique>
+        <xs:unique name="dbo_Postari_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Postari" />
+          <xs:field xpath="PostareID" />
+        </xs:unique>
+        <xs:unique name="dbo_PostCategorie_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_PostCategorie" />
+          <xs:field xpath="PostareID" />
+          <xs:field xpath="CategorieID" />
+        </xs:unique>
+        <xs:unique name="dbo_Utilizatori_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Utilizatori" />
+          <xs:field xpath="UtilizatorID" />
+        </xs:unique>
+        <xs:keyref name="FK__PostCateg__Posta__59FA5E80" refer="dbo_Postari_Constraint1">
+          <xs:selector xpath=".//dbo_PostCategorie" />
+          <xs:field xpath="PostareID" />
+        </xs:keyref>
+        <xs:keyref name="FK__PostCateg__Categ__5AEE82B9" refer="Constraint1">
+          <xs:selector xpath=".//dbo_PostCategorie" />
+          <xs:field xpath="CategorieID" />
+        </xs:keyref>
+        <xs:keyref name="FK__Postari__Utiliza__52593CB8" refer="dbo_Utilizatori_Constraint1">
+          <xs:selector xpath=".//dbo_Postari" />
+          <xs:field xpath="UtilizatorID" />
+        </xs:keyref>
+        <xs:keyref name="FK__Comentari__Utili__571DF1D5" refer="dbo_Utilizatori_Constraint1">
+          <xs:selector xpath=".//dbo_Comentarii" />
+          <xs:field xpath="UtilizatorID" />
+        </xs:keyref>
+        <xs:keyref name="FK__Comentari__Posta__5629CD9C" refer="dbo_Postari_Constraint1">
+          <xs:selector xpath=".//dbo_Comentarii" />
+          <xs:field xpath="PostareID" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <ADS xmlns="" />
+  </Schema>
+</DataSourceView>
